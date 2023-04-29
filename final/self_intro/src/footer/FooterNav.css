@@ -1,0 +1,32 @@
+.footer-nav {}
+
+.footer-nav__list {
+    margin: 0;
+    padding: 0.5rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    list-style: none;
+}
+
+.footer-nav__item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid black;
+}
+
+.footer-nav__item:last-child {
+    border-right: none;
+}
+
+.footer-nav__link {
+    padding: 0.5rem;
+}
+
+.footer-nav__link:hover {
+    background-color: skyblue;
+    color: whitesmoke;
+}

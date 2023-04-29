@@ -1,0 +1,22 @@
+.accordion-section {}
+
+.accordion-section__title {
+    width: 100%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accordion-section__title::after {
+    content: "+";
+}
+
+.accordion-section__title-show::after {
+    content: "-";
+}
+
+.accordion-section__content {
+    padding: 1rem;
+}

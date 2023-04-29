@@ -1,0 +1,28 @@
+.button-link {
+    border: none;
+    padding: none;
+    margin: none;
+
+    color: rgb(0, 81, 255);
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background-color: rgb(91, 183, 241);
+}
+
+.button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: black;
+    background-color: #62CDFF;
+
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+}

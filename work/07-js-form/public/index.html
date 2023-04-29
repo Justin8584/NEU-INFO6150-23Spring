@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="form.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="http://placekitten.com/100/100" alt="header logo pic">
+        <h1 class="header__title">Here is my webpage title</h1>
+
+        <nav class="global-nav">
+            <ul class="global-nav__menu">
+                <li class="global-nav__item"><a href="#">Homepage</a></li>
+                <li class="global-nav__item"><a href="#">About Us</a></li>
+                <li class="global-nav__item"><a href="#">Register Today</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form class="register" action="/register" method="POST">
+            <label class="register__label register__name-group">
+                <span class="register__name-label">Name:</span>
+                <input class="register__name" name="name" type="text" placeholder="Your Name" />
+                <span class="register__name-error"> * "Name" field is required. Please enter your name.</span>
+            </label>
+
+            <label class="register__label">
+                <span class="register__email-label">Email:</span>
+                <input class="register__email" name="email" type="text" placeholder="Email Address" />
+                <div class="register__email--error"></div>
+            </label>
+
+            <label class="register__label">
+                <span class="register__confirm-label">Confirm Email:</span>
+                <input class="register__confirm" name="confirm" type="text" placeholder="Email Again" />
+                <div class="register__confirm--error"></div>
+            </label>
+
+            <label class="register__label" for="spam-checkbox">
+                <span c lass="register__spam-label">wants-spam?</span>
+                <input class="register__spam" id="spam-checkbox" name="spam" type="checkbox" checked />
+            </label>
+
+            <label class="register__label">
+                <span class="register__selection-label">Choose your Satisfaction:</span>
+                <select class="register__selection" name="satisfaction" id="satisfaction">
+                    <option class="select__option" value="default">--Please select--</option>
+                    <option class="select__option" value="5">Very Satisfied</option>
+                    <option class="select__option" value="4">Satisfied</option>
+                    <option class="select__option" value="3">Neutral</option>
+                    <option class="select__option" value="2">Dissatisfied</option>
+                    <option class="select__option" value="1">Very Dissatisfied</option>
+                </select>
+            </label>
+
+            <button class="register__submit" type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <span>
+            We care about your privacy. Please check out here.
+        </span>
+
+        <nav class="footer-nav">
+            <ul class="footer-nav__menu">
+                <li class="footer-nav__item"><a href="#">Privacy Link</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

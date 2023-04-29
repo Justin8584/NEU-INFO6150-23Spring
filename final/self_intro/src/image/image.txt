@@ -1,0 +1,40 @@
+// university logo
+// below Images adapted from University website. For Alumni, and only allow non-commercial usage.
+// I have checked with my former superior, I can only use it in non-commercial and list the company names properly.
+university-Hallmark-red-no-bkgd-rgb.jpg
+neu_logo.png
+UC_Berkeley_Seal_80px.png
+suitX logo front page.jpg
+iacas_logo.jpg
+
+//Pictures from unsplash
+// use base on the Unsplash License, https://unsplash.com/license
+https://unsplash.com/photos/9_gm0RCeZCY
+https://unsplash.com/photos/Mu0ExSKTOBs
+https://unsplash.com/photos/fSlc4po8mio
+https://unsplash.com/photos/44gI2mp9AQg
+https://unsplash.com/photos/vSCEykFLOd0
+https://unsplash.com/photos/jgvAnBXkkis
+https://unsplash.com/photos/8RggniY2V8c
+https://unsplash.com/photos/9cOvvwN76hw
+
+https://unsplash.com/photos/J-k2EV7szAY
+https://unsplash.com/photos/7qqjA0iBNf0
+https://unsplash.com/photos/ffe0iwML4TE
+https://unsplash.com/photos/PivEMTeEK2Y
+https://unsplash.com/photos/dc94LHM58cA
+https://unsplash.com/photos/Z0LnN14EOls
+https://unsplash.com/photos/Wa_sn6JB9UI
+
+https://unsplash.com/photos/lCPhGxs7pww
+https://unsplash.com/photos/EMPZ7yRZoGw
+https://unsplash.com/photos/K_dkaLSkriI
+
+https://unsplash.com/photos/fvpgfw3IF1w
+
+
+
+//pictures that took by myself
+IMG_7889.jpeg
+IMG_1976 Background Removed.png
+IMG_0897.jpeg

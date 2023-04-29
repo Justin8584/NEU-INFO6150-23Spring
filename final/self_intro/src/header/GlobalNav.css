@@ -1,0 +1,59 @@
+/* below CSS adapted from https://css.gg under the MIT License */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+
+.global-nav {
+    background-color: rgb(0, 110, 255);
+}
+
+.global-nav__toggle {
+    border: none;
+    padding: 0.25rem;
+
+    /* top | right | bottom | left */
+    margin: 1rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.gg-menu {
+    margin-left: auto;
+}
+
+.global-nav__list {
+    margin: 0;
+    padding: 0;
+
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.global-nav__list--open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.global-nav__link {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.global-nav__link:hover {
+    background-color: skyblue;
+    color: whitesmoke;
+}
+
+@media (min-width: 44rem) and (prefers-reduced-motion: no-preference) {
+
+    .global-nav__toggle {
+        display: none;
+    }
+
+    .global-nav__list {
+        display: flex;
+        flex-direction: row;
+    }
+}

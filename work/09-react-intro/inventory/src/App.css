@@ -1,0 +1,24 @@
+.add-button {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.subtract-button {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.reorder-button {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}

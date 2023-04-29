@@ -1,0 +1,52 @@
+/* below CSS adapted from https://css.gg under the MIT License */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/mail.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/link.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/youtube.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
+
+.footer {
+    background-color: #BACDDB;
+    padding: 0.5rem;
+}
+
+.footer-title__main {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    padding-left: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social__list {
+    margin: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: auto;
+    list-style: none;
+}
+
+.footer-social__item {
+    padding: 1rem;
+}
+
+.footer-social__item:hover {
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: #B0DAFF;
+}
+
+@media (min-width: 40rem) and (prefers-reduced-motion: no-preference) {
+    .footer-content {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,25 @@
+/* below CSS adapted from https://css.gg under the MIT License */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css');
+
+.switch-theme__button {
+    padding: 0.5rem;
+    cursor: pointer;
+
+    position: absolute;
+}
+
+.switch-theme__button:hover {
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.dark {
+    background-color: var(--bg-color-dark);
+    color: var(--color-dark);
+}
+
+.light {
+    background-color: var(--bg-color-light);
+    color: var(--color-light);
+}

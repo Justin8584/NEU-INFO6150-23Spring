@@ -1,0 +1,25 @@
+.hobbies-panels {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+.hobbies-panel {
+    padding: 0.5rem;
+
+    grid-column: span 12;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.books-title {
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (min-width:75rem) {
+    .hobbies-panel {
+        grid-column: span 6;
+    }
+}

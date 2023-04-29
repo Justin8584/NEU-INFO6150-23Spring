@@ -1,0 +1,28 @@
+.accordion-section {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.accordion-section__title {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DAF5FF;
+    border: 1px solid black;
+}
+
+.accordion-section__title::after {
+    content: "+";
+}
+
+.accordion-section__title-show::after {
+    content: "-";
+}
+
+.accordion-section__content {
+    padding: 1rem;
+}

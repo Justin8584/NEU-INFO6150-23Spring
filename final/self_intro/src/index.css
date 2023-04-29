@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+:root {
+  --bg-color-light: #fff;
+  --bg-color-dark: #333;
+
+  --color-light: #333;
+  --color-dark: #fff;
+}

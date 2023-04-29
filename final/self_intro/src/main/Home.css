@@ -1,0 +1,34 @@
+.home {}
+
+.home-block {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 2rem 3rem 1rem 3rem;
+    margin: 1rem 0 1rem 0;
+    /* background-color: #D6D6D4; */
+}
+
+.home-block__img {
+    padding: 1rem;
+    max-width: 200px;
+    height: auto;
+}
+
+.content__title {
+    text-align: center;
+}
+
+.text__emphasize {
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (min-width: 37rem) {
+
+    .home-block {
+        flex-direction: row;
+    }
+}

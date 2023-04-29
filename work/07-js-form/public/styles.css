@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+    /* align-items: center;
+    justify-items: center; */
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "header__logo header__title" "global-nav global-nav";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+
+    grid-area: header;
+
+    background-color: aqua;
+}
+
+.header__logo {
+    grid-area: header__logo;
+
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.header__title {
+    grid-area: header__title;
+}
+
+.global-nav {
+    grid-area: global-nav;
+
+    padding-bottom: 1rem;
+}
+
+.global-nav__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: bisque;
+
+    display: grid;
+    align-items: center;
+}
+
+.register {
+    display: grid;
+    justify-content: space-around;
+
+    gap: 2rem;
+    margin: 0 25%;
+}
+
+.register__label {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.register__name-error {
+    display: none;
+    color: red;
+}
+
+.register__name-invalid .register__name-error {
+    display: initial;
+}
+
+.register__email--error {
+    color: red;
+}
+.register__confirm--error {
+    color: red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: footer;
+
+    padding: 1rem;
+    background-color: lightcoral;
+}
+
+.footer-nav__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav__item {
+    list-style: none;
+}
+
+@media (min-width: 40rem) {
+    .register {
+        justify-items: center;
+    }
+    .register__label {
+        display: flex;
+        flex-direction: row;
+
+        gap: 0.5rem;
+    }
+}

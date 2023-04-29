@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="header__logo" src="http://placekitten.com/100/100" alt="header logo pic">
+            <h1 class="header__title">Here is my webpage title</h1>
+
+            <nav class="global-nav">
+                <ul class="global-nav__menu">
+                    <li class="global-nav__item"><a href="#">Header Link</a></li>
+                    <li class="global-nav__item"><a href="#">Header Link</a></li>
+                    <li class="global-nav__item"><a href="#">Header Link</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h2 class="main__header">CSS is Awesome</h2>
+            <p class="main__content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Platea dictumst quisque sagittis purus sit amet volutpat. 
+            </p>
+
+            <form class="form" action="/submit" method="POST">
+                <label class="form__label"><span class="form__text">Your Name:</span>
+                    <input class="form__input" name="name" type="text" placeholder="Your name" required>
+                </label>
+                <label class="form__label"><span class="form__text">Your Email:</span>
+                    <input class="form__input" name="email" type="email" placeholder="Your email" required>
+                </label>
+                <label class="form__checkbox" for="annoy-checkbox">
+                    <span class="form__text">Do you want us to send you annoying emails?</span>
+                    <input class="annoy-checkbox" id="annoy-checkbox"  name="annoy_me" type="checkbox" checked>
+                </label>
+                
+                <label class="form__label"><span class="form__text">Choose your Tier:</span>
+                    <select class="form__select" name="tier" id="">
+                        <option class="select__option" value="default">--Please select--</option>
+                        <option class="select__option" value="1">Silver Tier</option>
+                        <option class="select__option" value="2">Gold Tier</option>
+                        <option class="select__option" value="3">Platinum Tier</option>
+                    </select>
+                </label>
+                
+                <button class="form__button" type="submit">Register</button>
+            </form>
+
+        </main>
+
+        <footer class="footer">
+            <span>
+                We care about your privacy. Please check out here.
+            </span>
+    
+            <nav class="footer-nav">
+                <ul class="footer-nav__menu">
+                    <li class="footer-nav__item"><a href="#">Privacy Link</a></li>
+                </ul>
+            </nav>
+        </footer>
+        
+    </body>
+
+</html>

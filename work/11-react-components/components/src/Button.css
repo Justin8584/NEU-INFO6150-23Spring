@@ -1,0 +1,16 @@
+.button-link {
+    border: none;
+    padding: none;
+    margin: none;
+
+    color: blue;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.button {
+    color: black;
+    background-color: papayawhip;
+
+    border: 1px solid black;
+}

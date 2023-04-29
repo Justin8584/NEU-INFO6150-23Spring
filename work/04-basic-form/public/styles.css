@@ -1,0 +1,141 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "header__logo header__title" "global-nav global-nav";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-area: header;
+
+    background-color: aqua;
+}
+
+.header__logo {
+    grid-area: header__logo;
+
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.header__title {
+    grid-area: header__title;
+}
+
+.global-nav {
+    grid-area: global-nav;
+
+    padding-bottom: 1rem;
+}
+
+.global-nav__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    background-color: antiquewhite;
+
+    grid-area: main;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.main__header {
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.main__content {
+    margin: 0;
+}
+
+.form {
+    display: grid;
+    align-items: center;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form__text {
+    line-height: 1.6;
+    padding-right: 0.5rem;
+}
+
+.form__input {
+    max-width: 15rem;
+}
+
+.form__select {
+    max-width: 15rem;
+}
+
+.form__button {
+    max-width: 10rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: footer;
+
+    padding: 1rem;
+    background-color: lightcoral;
+}
+
+.footer-nav__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav__item {
+    list-style: none;
+}
+
+@media (min-width: 50rem) {
+    .form__label {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form__input {
+        min-width: 20rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    .form__select {
+        max-width: 100%;
+    }
+}

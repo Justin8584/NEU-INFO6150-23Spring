@@ -1,0 +1,81 @@
+div {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "local-menu main"
+        "footer footer";
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 3rem 1fr 3rem;
+}
+
+header {
+    background-color: plum;
+    grid-area: header;
+    height: 3rem;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    /* align-items: center; */
+}
+
+.menu li {
+    height: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+.menu li:hover {
+    background-color: rebeccapurple;
+}
+
+.menu li:hover a {
+    color: white;
+}
+
+.local-menu {
+    background-color: pink;
+    grid-area: local-menu;
+    border-right: 1px solid black;
+}
+
+.local-menu ul {
+    padding-inline-start: 15px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.local-menu li {
+    margin: 1rem 0 1rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    list-style: none;
+}
+
+.local-menu li:hover {
+    background-color: plum;
+}
+
+main {
+    background-color: pink;
+    grid-area: main;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: plum;
+    padding-inline-start: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
